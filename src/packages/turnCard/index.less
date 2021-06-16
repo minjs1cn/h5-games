@@ -1,0 +1,42 @@
+@import '../shared/style/index.less';
+
+.mk {
+  &-turnCard {
+    &_group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &_card {
+      position: relative;
+      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &._active &__front {
+        transform: translate(-50%, -50%) rotateY(180deg);
+      }
+      
+      &._active &__back {
+        transform: rotateY(360deg);
+      }
+    
+      &__back {
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+        transition-property: transform;
+      }
+    
+      &__front {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotateY(0deg);
+        backface-visibility: hidden;
+        transition-property: transform;
+      }
+    }
+  }
+}

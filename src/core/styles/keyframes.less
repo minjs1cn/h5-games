@@ -1,0 +1,83 @@
+/* keyframes */
+
+/* 淡入 */
+.fadeIn(@name) {
+  @keyframes @name {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/* 淡出 */
+.fadeOut(@name) {
+  @keyframes @name {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+}
+
+/* 放大 */
+.zoomIn(@name) {
+  @keyframes @name {
+    from {
+      transform: scale(0);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+}
+
+/* 弹性放大 */
+.bounceIn(@name) {
+  @keyframes @name {
+    from {
+      transform: scale(0);
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+}
+
+/* 竖向精灵图 */
+.spritesX(@name) {
+  @keyframes @name {
+    from {
+      background-position: 0 0;
+    }
+
+    to {
+      background-position: 100% 0;
+    }
+  }
+}
+
+/* 横向精灵图 */
+.spritesY(@name) {
+  @keyframes @name {
+    from {
+      background-position: 0 0;
+    }
+
+    to {
+      background-position: 0 100%;
+    }
+  }
+}

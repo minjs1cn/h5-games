@@ -1,0 +1,162 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  user-select: none;
+}
+
+#app {
+  height: 100%;
+  background-color: #e34030;
+  min-height: 1606px;
+}
+
+@h: 80;
+
+.page {
+  position: relative;
+  background-size: 100% auto;
+  max-height: 100%;
+  min-height: 1334px;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/bg.jpg');
+  background-color: #e34030;
+
+  .btn {
+    width: 250px;
+    height: @h * 1px;
+    background-size: 100% 100%;
+    background-color: #ffb400;
+    color: #000;
+    font-size: 35px;
+    line-height: @h * 1px;
+    text-align: center;
+    display: inline-block;
+    border-radius: @h / 2 * 1px;
+  }
+
+  .rule-btn {
+    margin-right: 60px;
+  }
+
+  .record-btn {
+    margin-left: 60px;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+
+  .rule-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 9999;
+
+    .rule-container {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .rule-modal-title {
+      position: absolute;
+      top: -90px;
+      left: 60px;
+      width: 600px;
+      height: 160px;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-image: url('../../assets/titles.png');
+      text-align: center;
+      color: #6c3d00;
+      font-size: 40px;
+      line-height: 120px;
+    }
+
+    .rule-text {
+      width: 720px;
+      padding: 60px;
+      color: #fff;
+      font-size: 30px;
+      background-color: #f17853;
+      border-radius: 40px;
+
+      p {
+        margin-bottom: 16px;
+        line-height: 1.25;
+      }
+    }
+
+    .rule-close {
+      position: absolute;
+      top: 300px;
+      right: 60px;
+      background-image: url('../../assets/close.png');
+      width: 100px;
+      height: 100px;
+      background-size: 100% 100%;
+    }
+  }
+
+  .rule-record {
+    img {
+      width: 100px;
+      margin-right: 30px;
+    }
+
+    a {
+      margin-left: 170px;
+      text-decoration: none;
+      color: #ffdf04;
+    }
+  }
+
+  .rule-lottery {
+    text-align: center;
+
+    img {
+      width: 300px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 45px;
+    }
+
+    p {
+      font-size: 28px;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: #563408;
+      margin: 0 auto;
+      padding: 30px 60px;
+      font-size: 36px;
+      border-radius: 30px;
+      background-color: #fef9a3;
+      background: linear-gradient(#fff4be,#fed605);
+    }
+  }
+
+  .result-modal {
+    .rule-close {
+      top: 200px;
+    }
+  }
+}

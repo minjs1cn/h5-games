@@ -1,0 +1,149 @@
+{
+	"skinConfig": [
+		{
+			"childrens": [
+				{
+					"name": "bgImage",
+					"psd": "",
+					"size": {
+						"width": 750,
+						"height": 1606
+					},
+					"title": "背景图",
+					"type": "image",
+					"value": "//yun.tuisnake.com/h5-mami/dist/backgroundImg.e09a839d35af2a219a472818e5759045.jpg"
+				},
+				{
+					"title": "规则图",
+					"name": "ruleBgImage",
+					"size": {
+						"width": 120,
+						"height": 44
+					},
+					"type": "image",
+					"psd": "",
+					"value": "//yun.tuisnake.com/h5-mami/dist/rule.7fe947d73245bb3e152d731c761885f4.png"
+				},
+				{
+					"name": "bgColor",
+					"title": "背景色",
+					"type": "color",
+					"value": "#d61c14"
+				},
+				{
+					"name": "statusText",
+					"title": "抽奖状态颜色",
+					"type": "color",
+					"value": "#ffffff"
+				}
+			],
+			"name": "elements",
+			"title": "页面配置"
+		},
+		{
+			"childrens": [
+				{
+					"name": "cardBackImage",
+					"psd": "",
+					"size": {
+						"height": 278,
+						"width": 200
+					},
+					"title": "卡片背面",
+					"type": "image",
+					"value": "//yun.tuisnake.com/a2409756-4a5c-4874-8ebe-4b2ff296ac58.png"
+				},
+				{
+					"name": "cardFrontImage",
+					"psd": "",
+					"size": {
+						"height": 278,
+						"width": 200
+					},
+					"title": "卡片正面",
+					"type": "image",
+					"value": "//yun.tuisnake.com/h5-mami/dist/cardTurn.71ad13ecc81c42d13bf73a4a904f2dbc.png"
+				},
+				{
+					"title": "剩余次数颜色",
+					"type": "color",
+					"name": "timeColor",
+					"value": "#fff"
+				},
+				{
+					"title": "牌子文字",
+					"name": "turnCardText",
+					"type": "plainText",
+					"value": "好运"
+				},
+				{
+					"title": "牌子文字颜色",
+					"name": "turnCardTextColor",
+					"type": "color",
+					"value": "#cb1413"
+				}
+			],
+			"name": "core",
+			"title": "游戏配置"
+		},
+		{
+			"childrens": [
+				{
+					"name": "ruleText",
+					"require": true,
+					"title": "活动规则",
+					"type": "text",
+					"value": "<h3>活动说明</h3><p>这里填写活动的相关说明</p>"
+				},
+				{
+					"name": "limitTimes",
+					"require": true,
+					"title": "次数用完",
+					"type": "plainText",
+					"value": "今日机会已用完，明天再来吧"
+				},
+				{
+					"name": "appleColor",
+					"title": "苹果声明颜色",
+					"type": "color",
+					"value": "rgba(255,255,255,.6)"
+				},
+				{
+					"name": "appleBgColor",
+					"title": "苹果声明背景",
+					"type": "color",
+					"value": ""
+				},
+				{
+					"name": "appleText",
+					"title": "苹果声明文字",
+					"type": "text",
+					"value": "<p>*奖品与活动和设备生产商Apple Inc.公司无关</p>"
+				},
+				{
+					"name": "kefuChunkId",
+					"require": true,
+					"title": "客服文件ID",
+					"type": "plainText",
+					"value": "kefu2.ddd50255"
+				},
+				{
+					"name": "kefuVisible",
+					"require": true,
+					"title": "客服可见",
+					"type": "switch",
+					"value": true
+				},
+				{
+					"name": "thanksCloseText",
+					"require": true,
+					"title": "谢谢参与关闭文案",
+					"type": "plainText",
+					"value": "关闭"
+				}
+			],
+			"name": "textInfo",
+			"title": "公共配置"
+		}
+	]
+}

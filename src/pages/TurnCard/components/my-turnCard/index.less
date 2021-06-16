@@ -1,0 +1,42 @@
+.group {
+  width: 680px;
+  margin: 0 auto;
+}
+.card {
+  margin-bottom: 20px;
+  width: 200px;
+
+  &.active {
+    animation: shake_14Q1hRyT 1s linear infinite;
+  }
+
+  @keyframes shake_14Q1hRyT {
+    14.3% {
+      transform: rotate(15deg) scale(1.1)
+    }
+
+    28.6% {
+      transform: rotate(-15deg) scale(1.1)
+    }
+
+    38.12% {
+      transform: rotate(0) scale(1)
+    }
+  }
+  
+  .back,.front {
+    width: 200px;
+    height: 256px;
+    background-size: 100% 100%;
+  }
+
+  .back {
+    padding-top: 50px;
+
+    &-text {
+      font-size: 32px;
+      text-align: center;
+      font-weight: 500;
+    }
+  }
+}
