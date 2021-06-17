@@ -4,9 +4,9 @@
       <div class="game-container" :style="circleStyle">
         <canvas id="game"></canvas>
       </div>
-    </div>
-    <div class="light">
-      <div class="light ligth-revert"></div>
+      <div class="light">
+        <div class="light ligth-revert"></div>
+      </div>
     </div>
     <div class="start-bg" @click="onStart">
       <div :class="['start', startBtnActiveClass]"></div>

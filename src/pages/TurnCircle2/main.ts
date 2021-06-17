@@ -7,6 +7,6 @@ import CFG from './userConfig'
 // @ts-ignore
 window.CFG = CFG
 
-flexible.init(750, 750)
+flexible.init(640, 750)
 
 createApp(Main).mount('#app')

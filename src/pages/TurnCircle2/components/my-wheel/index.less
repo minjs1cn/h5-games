@@ -2,15 +2,16 @@
   position: relative;
   background-size: 100%;
   width: 100%;
-  height: 856px;
+  height: 1000px;
   overflow: hidden;
   text-align: center;
   z-index: 1;
   padding-top: 20px;
 
   .game-bg {
-    width: 720px;
-    height: 720px;
+    position: relative;
+    width: 700px;
+    height: 700px;
     background-color: #ffb400;
     border-radius: 50%;
     overflow: hidden;
@@ -20,7 +21,7 @@
   .game-container {
     width: 640px;
     height: 640px;
-    margin: 40px auto;
+    margin: 30px auto;
     border-radius: 50%;
     overflow: hidden;
 
@@ -33,8 +34,7 @@
   .start-bg {
     position: absolute;
     left: 50%;
-    top: 45%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -480px);
     width: 243px;
     height: 274px;
     border-radius: 50%;
@@ -69,15 +69,15 @@
   .light {
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 50%;
     width: 700px;
     height: 700px;
     background-size: 100%;
-    transform: translate(-50%, 30px);
+    transform: translate(-50%, -50%);
     background-image: url('../../assets/3d407e4e-4275-44fa-afc1-8319a9484942.png');
 
     &.ligth-revert {
-      transform: translate(-50%) rotate(15deg);
+      transform: translate(-50%, -50%) rotate(15deg);
       animation: ligthRevert 1s linear infinite;
       background-image: url('../../assets/3d407e4e-4275-44fa-afc1-8319a9484942.png');
     }

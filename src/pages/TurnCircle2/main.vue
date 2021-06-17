@@ -21,6 +21,12 @@ import MyWheel, { useRotate } from './components/my-wheel/index.vue'
 import Banner from './components/banner/index.vue'
 import LimitTimes from './components/limit-times/index.vue'
 
+function delay(duration: number) {
+  return new Promise(resolve => {
+    setTimeout(resolve, duration)
+  })
+}
+
 import './main.less'
 
 export default defineComponent({
@@ -63,10 +69,11 @@ export default defineComponent({
 
       rotate.start()
       const lottery = await doJoin()
+      await delay(2000)
       if (lottery) {
         rotate.to({
           index: getOptionIndexByPrizeType(3),
-          duration: 3000,
+          duration: 4000,
           complete: () => {
             showResultModal({
               reset
